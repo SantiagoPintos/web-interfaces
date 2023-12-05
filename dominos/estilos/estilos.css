@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Bebas";
+    src: url("../fonts/bebas.ttf");
+}
+
+:root{
+    --cRojo: #eb1c24;
+    --cCeleste: #2a628e
+}
+
+body{
+    font-family: "Bebas";
+}
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 40px;
+    color: var(--cCeleste);
+}
+
+header nav{
+    background-color: var(--cRojo);
+}
+header nav a{
+    color: white;
+}
+
+section:nth-of-type(1){
+    background-color: var(--cCeleste);
+}
+section:nth-of-type(1) h1{
+    color: white;
+}
+
+span{
+    color: var(--cRojo);
+}
+
+/* destacado del mes */
+section:nth-of-type(2) article a{
+    background-color: var(--cRojo);
+    text-decoration: none;
+    color: white;
+}
+
+/* mm que sabor */
+section:nth-of-type(3){
+    background-image: url("../img/fondo.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+section:nth-of-type(3) h1{
+    color: white;
+}
+
+/* tiendas */
+section:nth-of-type(4){
+    background-color: var(--cRojo);
+}
+section:nth-of-type(4) h2,
+section:nth-of-type(4) figcaption{
+    color: white;
+}
+
+/* formulario */
+
+
+
+section:nth-of-type(5) input[type="text"],
+section:nth-of-type(5) input[type="email"],
+section:nth-of-type(5) label, textarea,
+select {
+    color: var(--cCeleste);
+}
+
+section:nth-of-type(5) input, select, textarea {
+    border: 2px solid var(--cCeleste);
+}
+
+section:nth-of-type(5) input, select, textarea {
+    border: 2px solid var(--cCeleste);
+}
+
+textarea {
+    resize: none;
+}
+
+section:nth-of-type(5) input[type="submit"] {
+    background-color: var(--cCeleste);
+    color: white;
+}
+
+section:nth-of-type(5) input[type="submit"]:hover {
+    background-color:var(--cRojo);
+    color: white;
+}
+
+section:nth-of-type(5) input::placeholder, section:nth-of-type(4) textarea::placeholder {
+    color: var(--cCeleste);
+}
+
+section:nth-of-type(5) figure img {
+    border: 4px solid var(--cCeleste);
+}
+
+
+
+footer{
+    background-color: var(--cRojo);
+    color: white;
+}

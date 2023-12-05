@@ -1,0 +1,115 @@
+/* FUENTES */
+@font-face {
+    font-family: "Titulos";
+    src: url("../fonts/Yellow.ttf");
+}
+
+@font-face {
+    font-family: "Textos";
+    src: url("../fonts/Montserrat.ttf");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Textos", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Titulos", sans-serif;
+}
+h1{font-size: 4em;}
+h2{font-size: 2em;}
+p{font-size: 1em;}
+
+
+/* HEADER */
+header{
+    background-color:#f9f2e0;
+}
+header nav ul li a{
+    color: black;
+}
+
+header nav ul li:nth-child(1) a{
+    font-weight: 700;
+}
+
+
+/* main */
+main section:nth-of-type(1){
+    background-image: url("./../img/header.jpeg");
+    padding-top: 30rem;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* paris en fotos */
+main section:nth-of-type(3) article figure{
+    position: relative;
+}
+
+main section:nth-of-type(3) article figure a{
+    font-size: large;
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    background-color: white;
+    opacity: 0.5;
+}
+
+@media (min-width: 1200px) {
+    main section:nth-of-type(3) article figure a{
+        top: 80%;
+    }
+}
+
+/* 
+    sección Musee Lotu, Torre Eiffel y Rua da Place - 
+    arreglo para que texto quede mas abajo, es necesario porque imgs 
+    son mas alta que las demás
+*/
+main section article:nth-child(4) figure a,
+main section article:nth-child(5) figure a,
+main section article:nth-child(6) figure a{
+    top: 90%;
+}
+
+/* seccion novedades (formulario) */
+main section:nth-child(4){
+    background-image: url("./../img/pattern.jpg");
+    background-attachment: fixed;
+}
+
+main section:nth-child(4) article h2{
+    background-color: black;
+    color: white;
+}
+
+main section:nth-child(4) article form input{
+    padding: 0.5rem;
+    border: 2px solid black;
+}
+
+main section:nth-child(4) article form input[type="submit"]{
+    background-color: #efefef;
+}
+
+/* Fin sección form */
+
+main hr{
+    background-color: #f8f1de;
+    height: 10px;
+}
+
+/* seccion palacio */
+main section:nth-child(5) article p{
+    font-weight: 500;
+}
+
+footer{
+    background-color: #f9f2e0;
+}
